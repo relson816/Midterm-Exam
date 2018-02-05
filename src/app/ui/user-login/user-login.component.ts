@@ -16,10 +16,6 @@ export class UserLoginComponent {
 
   /// Social Login
 
-  signInWithGithub() {
-    this.auth.githubLogin()
-    .then(() => this.afterSignIn());
-  }
 
   signInWithGoogle() {
     this.auth.googleLogin()
@@ -31,10 +27,6 @@ export class UserLoginComponent {
       .then(() => this.afterSignIn());
   }
 
-  signInWithTwitter() {
-    this.auth.twitterLogin()
-      .then(() => this.afterSignIn());
-  }
 
   /// Anonymous Sign In
 
